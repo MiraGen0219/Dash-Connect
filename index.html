@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Dashboard Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="main-title">JavaScript API DashConnect</h1>
+  <div class="grid-container">
+
+    <section class="grid-item" id="dog-api">
+      <h2>🐶 Random Dog</h2>
+      <button id="dog-image">Get Dog</button>
+      <div class="output" id="dog-output"></div>
+    </section>
+
+    <section class="grid-item" id="cat-api">
+      <h2>🐱 Random Cat</h2>
+      <button id = "cat-image">Get Cat</button>
+      <div class="output" id="cat-output"></div>
+    </section>
+
+    <section class="grid-item" id="weather-api">
+      <h2>☀️ Weather Info</h2>
+      <button id = "get-weather">Get Weather</button>
+      <div class="output" id="weather-output"></div>
+    </section>
+
+    <section class="grid-item" id="currency-api">
+      <h2>💱 Currency Rates</h2>
+      
+      <input type="number" id="amount" placeholder="Enter amount" />
+
+<select id="from-currency">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+    <option value="GBP">GBP</option>
+    <option value="JPY">JPY</option>
+</select>
+
+<span>to</span>
+
+<select id="to-currency">
+    <option value="EUR">EUR</option>
+    <option value="USD">USD</option>
+    <option value="GBP">GBP</option>
+    <option value="JPY">JPY</option>
+</select>
+
+<button id="get-exchange-rate">Get Rate</button>
+
+<div class="output" id="currency-output"></div>
+      <div class="output" id="currency-output"></div>
+    </section>
+
+    <section class="grid-item" id="movies-api">
+      <h2>🎮 Trending Movies</h2>
+      <button id = "movie-list">Get Movies</button>
+      <div class="output" id="movies-output"></div>
+    </section>
+
+    <section class="grid-item" id="github-api">
+      <h2>🧑‍💻 GitHub User</h2>
+
+        <input type="text" id="github-search" placeholder="Enter Username" />
+
+      <button id = "github-user">Get User</button>
+      <div class="output" id="github-output"></div>
+    </section>
+
+    <section class="grid-item" id="joke-api">
+      <h2>🤣 Random Joke</h2>
+      <button id ="random-joke">Get Joke</button>
+      <div class="output" id="joke-output"></div>
+    </section>
+
+    <section class="grid-item" id="books-by-topic">
+      <h2>📚 Book Suggestions</h2>
+
+        <input type="text" id="books-search" 
+        placeholder="Enter Topic, ie. 'Love'" />
+
+      <button id="book-suggestions">Get Books</button>
+      <div class="output" id="books-output"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
